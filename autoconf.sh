@@ -10,7 +10,7 @@ cd $ROOT
 # install dependencies
 
 # fetch source code
-wget http://ftp.gnu.org/gnu/autoconf/autoconf-${VERSION}.tar.gz
+wget -c http://ftp.gnu.org/gnu/autoconf/autoconf-${VERSION}.tar.gz
 tar -zxvf autoconf-${VERSION}.tar.gz
 
 # make

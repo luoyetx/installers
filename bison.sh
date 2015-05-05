@@ -10,7 +10,7 @@ cd $ROOT
 # install dependencies
 
 # fetch source code
-wget http://ftp.gnu.org/gnu/bison/bison-${VERSION}.tar.xz
+wget -c http://ftp.gnu.org/gnu/bison/bison-${VERSION}.tar.xz
 tar --xz -xvf bison-${VERSION}.tar.xz
 
 # make

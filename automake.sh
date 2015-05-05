@@ -10,7 +10,7 @@ cd $ROOT
 # install dependencies
 
 # fetch source code
-wget http://ftp.gnu.org/gnu/automake/automake-${VERSION}.tar.xz
+wget -c http://ftp.gnu.org/gnu/automake/automake-${VERSION}.tar.xz
 tar --xz -xvf automake-${VERSION}.tar.xz
 
 # make
