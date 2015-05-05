@@ -11,7 +11,7 @@ cd $ROOT
 yum install -y openssl-devel popt
 
 # fetch source code
-wget -c https://github.com/alanxz/rabbitmq-c/releases/download/v0.6.0/rabbitmq-c-${VERSION}.tar.gz
+wget -c https://github.com/alanxz/rabbitmq-c/archive/v${VERSION}.tar.gz -O rabbitmq-c-${VERSION}.tar.gz
 tar -zxvf rabbitmq-c-${VERSION}.tar.gz
 
 # make
