@@ -23,4 +23,5 @@ make -j${CONCURRENCY}
 
 # install
 make install
+ln -s /usr/local/bin/gcc /usr/local/bin/cc
 ldconfig
