@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=0.9.2
-CONCURRENCY=2
+. BasicConfig.sh
 
-cd $ROOT
+# configure
+VERSION=0.9.2
 
 # install dependencies
 yum install -y libevent-devel zlib-devel openssl-devel

@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=3.2.2
-CONCURRENCY=2
+. BasicConfig.sh
 
-cd $ROOT
+# configure
+VERSION=3.2.2
 
 # install dependencies
 

@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=4.8.4
-CONCURRENCY=2
+. BasicConfig.sh
 
-cd $ROOT
+# configure
+VERSION=4.8.4
 
 # install dependencies
 yum install -y zlib-devel

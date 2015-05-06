@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=2.7.9
-CONCURRENCY=2
+. BasicConfig.sh
 
-cd $ROOT
+# configure
+VERSION=2.7.9
 
 # install dependencies
 yum install -y zlib-devel bzip2-devel openssl-devel xz-libs sqlite-devel path readline-devel

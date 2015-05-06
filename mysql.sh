@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
+. BasicConfig.sh
+
 # configure
-ROOT=/usr/local/src
 VERSION=5.6.23
-CONCURRENCY=2
 
 PREFIX=/usr/local/mysql
 DATAROOT=${PREFIX}/data
 mkdir -p ${DATAROOT}
 groupadd mysql
 useradd -r -g mysql mysql 
-
-cd $ROOT
 
 # install dependencies
 yum install -y ncurses-devel perl

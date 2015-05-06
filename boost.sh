@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
+. BasicConfig.sh
+
 # configure
-ROOT=/usr/local/src
 VERSION=1.58.0
-CONCURRENCY=2
-
 PYTHON=2.7
-
-cd $ROOT
 
 # install dependencies
 

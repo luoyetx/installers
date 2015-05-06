@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=2.5.1
-CONCURRENCY=2
+. BasicConfig
 
-cd $ROOT
+# configure
+VERSION=2.5.1
 
 # install dependencies
 

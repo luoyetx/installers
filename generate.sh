@@ -6,12 +6,10 @@ else
 cat > $1 <<EOF
 #!/usr/bin/env bash
 
-# configure
-ROOT=/usr/local/src
-VERSION=X.X.X
-CONCURRENCY=2
+. BasicConfig.sh
 
-cd \$ROOT
+# configure
+VERSION=X.X.X
 
 # install dependencies
 
@@ -21,6 +19,7 @@ cd \$ROOT
 make -j\${CONCURRENCY}
 
 # install
+make install
 EOF
 
 chmod +x $1
