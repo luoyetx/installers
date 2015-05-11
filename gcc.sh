@@ -16,7 +16,7 @@ tar --bzip2 -xvf gcc-${VERSION}.tar.bz2
 cd gcc-${VERSION}
 ./contrib/download_prerequisites
 # configure params are copied from CentOS6.6 gcc4.4.7 and remove language java, ada
-./configure --prefix=/usr/local --mandir=/usr/local/share/man --infodir=/usr/local/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,fortran --disable-dssi --enable-libgcj-multifile --with-ppl --with-cloog --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --disable-multilib
+./configure --prefix=/usr/local --mandir=/usr/local/share/man --infodir=/usr/local/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-languages=c,c++,objc,obj-c++,fortran --disable-dssi --enable-libgcj-multifile --with-ppl --with-cloog --with-tune=generic --disable-multilib
 make -j${CONCURRENCY}
 
 # install
