@@ -10,8 +10,7 @@ yum install -y zlib-devel bzip2-devel openssl-devel xz-libs sqlite-devel path re
 
 # fetch source code
 wget -c https://www.python.org/ftp/python/${VERSION}/Python-${VERSION}.tar.xz
-xz -d Python-${VERSION}.tar.xz
-tar -xvf Python-${VERSION}.tar
+tar -J -xvf Python-${VERSION}.tar.xz
 
 # make
 cd Python-${VERSION}

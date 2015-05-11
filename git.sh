@@ -10,7 +10,7 @@ yum install -y curl-devel expat-devel gettext-devel openssl-devel zlib-devel per
 
 # fetch source code
 wget -c https://www.kernel.org/pub/software/scm/git/git-${VERSION}.tar.xz
-tar -xz -xvf git-${VERSION}.tar.xz
+tar -J -xvf git-${VERSION}.tar.xz
 
 # make
 cd git-${VERSION}
