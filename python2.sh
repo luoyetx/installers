@@ -23,6 +23,6 @@ make altinstall
 ldconfig
 
 # extra
-cd $ROOT
+cd $SOURCE_ROOT
 wget https://raw.githubusercontent.com/pypa/pip/master/contrib/get-pip.py
 python2.7 get-pip.py
