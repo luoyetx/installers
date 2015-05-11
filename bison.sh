@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-. BasicConfig
-
+. BasicConfig.sh
+pwd
 # configure
 VERSION=2.5.1
 
