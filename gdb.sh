@@ -9,7 +9,7 @@ VERSION=7.8
 
 # fetch source code
 wget -c http://ftp.gnu.org/gnu/gdb/gdb-${VERSION}.tar.xz
-tar --xz -xvf gdb-${VERSION}.tar.xz
+tar -J -xvf gdb-${VERSION}.tar.xz
 
 # make
 cd gdb-${VERSION}

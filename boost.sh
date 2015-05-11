@@ -11,7 +11,7 @@ PYTHON=2.7
 # fetch source code
 VERSION_=${VERSION//\./_}
 wget -c http://jaist.dl.sourceforge.net/project/boost/boost/${VERSION}/boost_${VERSION_}.tar.bz2
-tar --bzip2 -xvf boost_${VERSION_}.tar.bz2
+tar -j -xvf boost_${VERSION_}.tar.bz2
 
 # make
 cd boost_${VERSION_}

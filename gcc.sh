@@ -10,7 +10,7 @@ yum install -y zlib-devel
 
 # fetch source code
 wget -c http://ftp.gnu.org/gnu/gcc/gcc-${VERSION}/gcc-${VERSION}.tar.bz2
-tar --bzip2 -xvf gcc-${VERSION}.tar.bz2
+tar -j -xvf gcc-${VERSION}.tar.bz2
 
 # make
 cd gcc-${VERSION}

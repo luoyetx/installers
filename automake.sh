@@ -9,7 +9,7 @@ VERSION=1.15
 
 # fetch source code
 wget -c http://ftp.gnu.org/gnu/automake/automake-${VERSION}.tar.xz
-tar --xz -xvf automake-${VERSION}.tar.xz
+tar -J -xvf automake-${VERSION}.tar.xz
 
 # make
 cd automake-${VERSION}
