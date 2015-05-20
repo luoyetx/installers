@@ -5,7 +5,7 @@
 # configure
 VERSION=5.6.23
 
-PREFIX=/usr/local/mysql
+PREFIX=${INSTALL_PREFIX}
 DATAROOT=${PREFIX}/data
 mkdir -p ${DATAROOT}
 groupadd mysql
@@ -23,7 +23,7 @@ cd mysql-${VERSION}
 
 cmake \
 -DCMAKE_INSTALL_PREFIX=${PREFIX} \
--DMYSQL_UNIX_ADDR=${PREFIX}/mysql.sock \
+-DMYSQL_UNIX_ADDR=/tmp/mysql.sock \
 -DDEFAULT_CHARSET=utf8 \
 -DDEFAULT_COLLATION=utf8_general_ci \
 -DWITH_INNOBASE_STORAGE_ENGINE=1 \
@@ -40,7 +40,6 @@ make install
 ldconfig
 
 # extra
-chown -R mysql:mysql ${PREFIX}
 chown -R mysql:mysql ${DATAROOT}
 
 cd ${PREFIX}
