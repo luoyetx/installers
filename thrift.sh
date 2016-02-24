@@ -14,8 +14,7 @@ tar -zxvf thrift-${VERSION}.tar.gz
 
 # make
 cd thrift-${VERSION}
-./bootstrap
-./configure --with-lua=no --with-python=no
+./configure --with-qt4=no --with-lua=no --with-python=no
 make -j${CONCURRENCY}
 
 # install
